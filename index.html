@@ -5,58 +5,89 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conf Bs As</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <header>
-            <img src="./assets/images/codoacodo.png" alt="logo de codo a codo" loading="lazy">
-            <h2>Conf Bs As</h2>
-            <nav>
-                <a href="#">La conferencia</a>
-                <a href="./pages/los_oradores.html">Los oradores</a>
-                <a href="./pages/el_lugar_y_la_fecha.html">El lugar y la fecha</a>
-                <a href="./pages/conviertete_en_orador.html">Conviértete en orador</a>
-                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+        <header class="header__flex">
+            <div class="logo">
+                <img class="img__logo" src="./assets/images/codoacodo.png" alt="logo de codo a codo" loading="lazy">
+                <h2>Conf Bs As</h2>
+            </div>
+            <nav class="header__nav">
+                <a class="link_nav" href="#">La conferencia</a>
+                <a class="link_nav" href="./pages/los_oradores.html">Los oradores</a>
+                <a class="link_nav" href="./pages/el_lugar_y_la_fecha.html">El lugar y la fecha</a>
+                <a class="link_nav" href="./pages/conviertete_en_orador.html">Conviértete en orador</a>
+                <a class="link_nav" href="./pages/comprar_tickets.html">Comprar tickets</a>
             </nav>
         </header>
         <main>
-            <section>
-                <img src="./assets/images/ba1.jpg" alt="Imagen del Palacio de Aguas Corrientes en Buenos Aires">
-                <h1>Conferencia Buenos Aires</h1>
-                <p>
-                    Buenos Aires llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!
-                </p>
-                <a href="./pages/conviertete_en_orador.html">Quiero ser orador</a>
-                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+            <section class="main">
+                <div class="textoPrincipal">
+                    <h1>Conferencia Buenos Aires</h1>
+                    <p>
+                        Buenos Aires llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!
+                    </p>
+                    <a class="buttonMain" href="./pages/conviertete_en_orador.html">Quiero ser orador</a>
+                    <a class="buttonMain" href="./pages/comprar_tickets.html">Comprar tickets</a>
+                </div>
             </section>
         </main>
-        <section>
-            <h2>CONOCE A LOS</h2>
-            <h3>ORADORES</h3>
+        <section class="oradores">
             <div>
-                <img src="./assets/images/steve.jpg" alt="Imagen de Steve Jobs" loading="lazy">
-                <h3>Steve Jobs</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
-                </p>
+                <h6>CONOCE A LOS</h6>
+                <h2>ORADORES</h2>
             </div>
-            <div>
-                <img src="./assets/images/bill.jpg" alt="Imagen de Bill Gates" loading="lazy">
-                <h3>Bill Gates</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eveniet dolores voluptas facilis, atque illo voluptates ratione aspernatur sed, placeat optio corporis quis a maxime dignissimos provident quae suscipit esse?
-                </p>
-            </div>
-            <div>
-                <img src="./assets/images/ada.jpeg" alt="Imagen de Ada Lovelace" loading="lazy">
-                <h3>Ada Lovelace</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis consectetur eos iusto exercitationem aspernatur vero commodi voluptas error ad recusandae, quisquam ipsum facilis dolorem magni ex dolorum vitae praesentium incidunt.
-                </p>
+            <div class="padreTarjetas">
+                <div class="tarjetas_flex">
+                    <div class="orador">
+                        <div class="img_box">
+                            <img class="img_tarjetas" src="./assets/images/steve.jpg" alt="Imagen de Steve Jobs" loading="lazy">
+                        </div>
+                        <input class="buttonJS" type="button" value="JavaScript">
+                        <input class="buttonRA" type="button" value="React">
+                        <h3>Steve Jobs</h3>
+                        <div class="descripTarjeta">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="orador" >
+                        <div class="img_box">
+                            <img class="img_tarjetas" src="./assets/images/bill.jpg" alt="Imagen de Bill Gates" loading="lazy">
+                        </div>
+                        <input class="buttonJS" type="button" value="JavaScript">
+                        <input class="buttonRA" type="button" value="React">
+                        <h3>Bill Gates</h3>
+                        <div class="descripTarjeta">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="orador" >
+                        <div class="img_box">
+                            <img class="img_tarjetas" src="./assets/images/ada.jpeg" alt="Imagen de Ada Lovelace" loading="lazy">
+                        </div>
+                        <input class="buttonNG" type="button" value="Negocios">
+                        <input class="buttonSU" type="button" value="Startups">
+                        <h3>Ada Lovelace</h3>
+                        <div class="descripTarjeta">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <img src="./assets/images/honolulu.jpg" alt="Imagen de Honolulu en Hawaii">
-            <div>
+        <section class="lugarYfecha">
+            <div class="elLugar">
+
+            </div>
+            <div class="laFecha">
                 <h3>Bs As - Octubre</h3>
                 <p>
                     Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolullu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sub>2</sub> de superficie). 
@@ -65,9 +96,23 @@
             </div>
         </section>
         <section>
-            <h2>CONVIÉRTETE EN UN</h2>
-            <h3>ORADOR</h3>
+            <h6>CONVIÉRTETE EN UN</h6>
+            <h2>ORADOR</h2>
             <p>Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos de qué quieres hablar!</p>
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <br>
+                <div>
+                    <textarea name="" id="" cols="44" rows="10" placeholder="¿Sobre qué quieres hablar?"></textarea>
+                </div>
+                <p>Recuerda incluir un título para tu charla</p>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
         <footer>
             <a href="">Preguntas frecuentes</a>
