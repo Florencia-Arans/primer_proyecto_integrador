@@ -7,10 +7,10 @@
     background-color: rgb(52, 58, 64);
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 0%;
     z-index: 10;
     height: 12vh;
+    width: 100%;
+    position: fixed; top: 0%;
 }
 .logo{
     display: flex;
@@ -26,7 +26,7 @@
     justify-content: space-between;
 }
 .img__logo{
-    width: 17%;
+    width: 30%;
 }
 .link_nav{
     text-decoration: none;
@@ -41,67 +41,82 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 12vh;
 }
 .textoPrincipal{
-    width: 60%;
+    width: 40%;
     text-align: right;
     color: white;
+    background-color: blueviolet;
     margin-right: 6rem;
-    padding-left: 20rem;
     display: flex;
     flex-direction: column;
+}
+.buttonBox{
+    display: inline-block;
+    background-color: brown;
 }
 .buttonMain{
     text-decoration: none;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    color: white;
 }
-.lugarYfecha{
-    display: flex;
-    height: 70vh;
+#CT{
+    background-color: chartreuse;
+    margin-left: 0.5rem;
 }
-.elLugar{
-    background-image: url(../assets/images/honolulu.jpg);
-    width: 50%;
-    height: 100%;
-    background-size: cover;
+.buttonUp{
+    display: inline-block;
+    padding: 1.6rem;
+    background-color: rgba(163, 163, 163, 0.401);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
-.laFecha{
-    height: 100%;
-    width: 50%;
-    background-color: rgb(52, 58, 64);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.bt-UP:hover{
+    background-color: rgb(163, 163, 163);
 }
 .oradores{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5rem;
+    background-color: blueviolet;
 }
 .padreTarjetas{
-    width: 80%;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: brown;
 }
 .tarjetas_flex{
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    background-color: chartreuse;
 }
 .orador{
-    width: 30%;
+    width: 21vw;
+    height: 76vh;
     border: 1px solid;
-    margin: 1rem;
     border-color: rgb(193, 192, 192);
     border-radius: 0.3rem;
+    transition: transform 1s;
+    box-shadow: 2px 7px 20px 0px rgba(83, 83, 83, 0.54);
+}
+.hover:hover{
+    transform: scale(1.05,1.05);
 }
 .img_box{
     height: 61%;
@@ -113,21 +128,24 @@ body{
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
 }
+.parrafoTarjeta{
+    margin-top: 1rem;
+}
 .descripTarjeta{
     width: 90%;
-    margin-top: 1rem;
+    padding: 1rem;
 }
 .buttonJS{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 .buttonRA{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 .buttonNG{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 .buttonSU{
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 h6{
     text-align: center;
@@ -135,4 +153,50 @@ h6{
 }
 h2{
     text-align: center;
+}
+.lugarYfecha{
+    display: flex;
+    height: 100vh;
+}
+.elLugar{
+    background-image: url(../assets/images/honolulu.jpg);
+    background-size: cover;
+    width: 50%;
+}
+.laFecha{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    display: flex;
+}
+.parrafoFecha{
+    margin: 3rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+p{
+    margin-bottom: 2rem;
+}
+footer{
+    background-color: rgb(52, 58, 64);
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+    width: 100%;
+}
+.barraInferior{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.link_footer{
+    text-decoration: none;
+    color: white;
 }

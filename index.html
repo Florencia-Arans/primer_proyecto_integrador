@@ -7,6 +7,7 @@
         <title>Conf Bs As</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="../../FONTAWESOME/fontawesome-free-6.2.0-web/css/all.min.css">
     </head>
     <body>
         <header class="header__flex">
@@ -16,9 +17,9 @@
             </div>
             <nav class="header__nav">
                 <a class="link_nav" href="#">La conferencia</a>
-                <a class="link_nav" href="./pages/los_oradores.html">Los oradores</a>
-                <a class="link_nav" href="./pages/el_lugar_y_la_fecha.html">El lugar y la fecha</a>
-                <a class="link_nav" href="./pages/conviertete_en_orador.html">Conviértete en orador</a>
+                <a class="link_nav" href="#los_oradores">Los oradores</a>
+                <a class="link_nav" href="#el_lugar_y_la_fecha">El lugar y la fecha</a>
+                <a class="link_nav" href="#conviertete_en_orador">Conviértete en orador</a>
                 <a class="link_nav" href="./pages/comprar_tickets.html">Comprar tickets</a>
             </nav>
         </header>
@@ -26,56 +27,62 @@
             <section class="main">
                 <div class="textoPrincipal">
                     <h1>Conferencia Buenos Aires</h1>
+                    <br>
                     <p>
                         Buenos Aires llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!
                     </p>
-                    <a class="buttonMain" href="./pages/conviertete_en_orador.html">Quiero ser orador</a>
-                    <a class="buttonMain" href="./pages/comprar_tickets.html">Comprar tickets</a>
+                    <div class="buttonBox">
+                        <a class="buttonMain" href="#conviertete_en_orador">Quiero ser orador</a>
+                        <a class="buttonMain" id="CT" href="./pages/comprar_tickets.html">Comprar tickets</a>
+                    </div>
                 </div>
             </section>
         </main>
-        <section class="oradores">
+        <section>
+            <span><a href="#"><i class="fa-solid fa-arrow-up buttonUp bt-UP"></a></i></span>
+        </section>
+        <section class="oradores" id="los_oradores">
             <div>
                 <h6>CONOCE A LOS</h6>
                 <h2>ORADORES</h2>
             </div>
             <div class="padreTarjetas">
                 <div class="tarjetas_flex">
-                    <div class="orador">
+                    <div class="orador hover">
                         <div class="img_box">
                             <img class="img_tarjetas" src="./assets/images/steve.jpg" alt="Imagen de Steve Jobs" loading="lazy">
                         </div>
-                        <input class="buttonJS" type="button" value="JavaScript">
-                        <input class="buttonRA" type="button" value="React">
-                        <h3>Steve Jobs</h3>
                         <div class="descripTarjeta">
-                            <p>
+                            <input class="buttonJS" type="button" value="JavaScript">
+                            <input class="buttonRA" type="button" value="React">
+                            <h3>Steve Jobs</h3>
+                            <p class="parrafoTarjeta">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
                             </p>
                         </div>
                     </div>
-                    <div class="orador" >
+                    <div class="orador hover" >
                         <div class="img_box">
                             <img class="img_tarjetas" src="./assets/images/bill.jpg" alt="Imagen de Bill Gates" loading="lazy">
                         </div>
-                        <input class="buttonJS" type="button" value="JavaScript">
-                        <input class="buttonRA" type="button" value="React">
-                        <h3>Bill Gates</h3>
                         <div class="descripTarjeta">
-                            <p>
+                            <input class="buttonJS" type="button" value="JavaScript">
+                            <input class="buttonRA" type="button" value="React">
+                            <h3>Bill Gates</h3>
+                            <p class="parrafoTarjeta">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
                             </p>
                         </div>
                     </div>
-                    <div class="orador" >
+                    <div class="orador hover" >
                         <div class="img_box">
                             <img class="img_tarjetas" src="./assets/images/ada.jpeg" alt="Imagen de Ada Lovelace" loading="lazy">
                         </div>
-                        <input class="buttonNG" type="button" value="Negocios">
-                        <input class="buttonSU" type="button" value="Startups">
-                        <h3>Ada Lovelace</h3>
                         <div class="descripTarjeta">
-                            <p>
+                            <input class="buttonNG" type="button" value="Negocios">
+                            <input class="buttonSU" type="button" value="Startups">
+                            <h3>Ada Lovelace</h3>
+                            <p class="parrafoTarjeta">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quam nisi exercitationem sapiente dolore reprehenderit quasi facilis, facere expedita repellendus quaerat, veritatis quod ipsa sint. Maiores temporibus quos dolorem libero!
                             </p>
                         </div>
@@ -83,19 +90,28 @@
                 </div>
             </div>
         </section>
-        <section class="lugarYfecha">
+        <section class="lugarYfecha" id="el_lugar_y_la_fecha">
             <div class="elLugar">
 
             </div>
             <div class="laFecha">
-                <h3>Bs As - Octubre</h3>
-                <p>
-                    Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolullu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sub>2</sub> de superficie). 
-                </p>
-                <a href="">Conocé más</a>
+                <div class="parrafoFecha">
+                    <h3>Bs As - Octubre</h3>
+                    <br>
+                    <p>
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolullu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie). 
+                    </p>
+                    <p>
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolullu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie). 
+                    </p>
+                    <p>
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolullu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie). 
+                    </p>
+                    <a class="buttonMain" href="">Conocé más</a>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="conviertete_en_orador">
             <h6>CONVIÉRTETE EN UN</h6>
             <h2>ORADOR</h2>
             <p>Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos de qué quieres hablar!</p>
@@ -114,14 +130,14 @@
                 </div>
             </form>
         </section>
-        <footer>
-            <a href="">Preguntas frecuentes</a>
-            <a href="">Contáctanos</a>
-            <a href="">Prensa</a>
-            <a href="">Conferencias</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Privacidad</a>
-            <a href="">Estudiantes</a>
+        <footer class="barraInferior">
+            <a class="link_footer" href="">Preguntas frecuentes</a>
+            <a class="link_footer" href="">Contáctanos</a>
+            <a class="link_footer" href="">Prensa</a>
+            <a class="link_footer" href="">Conferencias</a>
+            <a class="link_footer" href="">Términos y condiciones</a>
+            <a class="link_footer" href="">Privacidad</a>
+            <a class="link_footer" href="">Estudiantes</a>
         </footer>
     </body>
 </html>
